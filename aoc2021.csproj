@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{3D9FA432-A1E1-4FEF-8EEA-312055F13C91}</ProjectGuid>
+        <OutputType>Exe</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>aoc2021</RootNamespace>
+        <AssemblyName>aoc2021</AssemblyName>
+        <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Base\DataUtils.cs" />
+        <Compile Include="Base\Day.cs" />
+        <Compile Include="Base\InputResource.cs" />
+        <Compile Include="Base\Line.cs" />
+        <Compile Include="Base\Program.cs" />
+        <Compile Include="Days\Day01.cs" />
+        <Compile Include="Days\Day02.cs" />
+        <Compile Include="Days\Day03.cs" />
+        <Compile Include="Days\Day04.cs" />
+        <Compile Include="Days\Day05.cs" />
+        <Compile Include="Days\Day06.cs" />
+        <Compile Include="Days\Day07.cs" />
+        <Compile Include="Days\Day08.cs" />
+        <Compile Include="Days\Day09.cs" />
+        <Compile Include="Days\Day10.cs" />
+        <Compile Include="Days\Day11.cs" />
+        <Compile Include="Days\Day12.cs" />
+        <Compile Include="Days\Day13.cs" />
+        <Compile Include="Days\Day14.cs" />
+        <Compile Include="Days\Day15.cs" />
+        <Compile Include="Ext\AStarSharp.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Structs\ULongULong.cs" />
+        <Compile Include="Structs\Vector2.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Data\Day01.txt" />
+      <Content Include="Data\Day02.txt" />
+      <Content Include="Data\Day03.txt" />
+      <Content Include="Data\Day04.txt" />
+      <Content Include="Data\Day05.txt" />
+      <Content Include="Data\Day06.txt" />
+      <Content Include="Data\Day07.txt" />
+      <Content Include="Data\Day08.txt" />
+      <Content Include="Data\Day09.txt" />
+      <Content Include="Data\Day10.txt" />
+      <Content Include="Data\Day11.txt" />
+      <Content Include="Data\Day12.txt" />
+      <Content Include="Data\Day13.txt" />
+      <Content Include="Data\Day14.txt" />
+      <Content Include="Data\Day15.txt" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
